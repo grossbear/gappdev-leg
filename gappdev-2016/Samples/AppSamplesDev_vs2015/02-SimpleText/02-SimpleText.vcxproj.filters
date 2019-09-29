@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="AppWindow">
+      <UniqueIdentifier>{200fefc0-8422-4248-8fd6-5424cc565c3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{fd7f6c6a-d3ed-4f1d-baf1-c8eb06f2b264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Font">
+      <UniqueIdentifier>{7f28d554-ccfe-4ea6-a701-22a4a5b5df3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleText">
+      <UniqueIdentifier>{081a080d-3a08-4c26-a036-daa9158861a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TextRenderManagement">
+      <UniqueIdentifier>{bc45abae-da7e-44c1-a9e3-f5331be45be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AppWindow\sys">
+      <UniqueIdentifier>{689eb952-8d5a-4543-b49d-7a0f5ad7890c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TextRenderManagement\TextRenderer">
+      <UniqueIdentifier>{b437d3a4-ff2e-4c62-8057-aa03ba2c2d7a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Framework\AppWindow\AppWindow.cpp">
+      <Filter>AppWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\AppWindow\WinMain.cpp">
+      <Filter>AppWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\AppWindow\sys\Win32AppWindow.cpp">
+      <Filter>AppWindow\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Application.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Font\FontImageConstructor.cpp">
+      <Filter>Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\RenderModules\TextRenderManagment\FontManager.cpp">
+      <Filter>TextRenderManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\RenderModules\TextRenderManagment\TextRenderer\TextRenderer.cpp">
+      <Filter>TextRenderManagement\TextRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\02-SimpleText\SimpleTextApp.cpp">
+      <Filter>SimpleText</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Framework\AppWindow\AppWindow.h">
+      <Filter>AppWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\AppWindow\sys\Win32AppWindow.h">
+      <Filter>AppWindow\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Application.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\PlatformTypes.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Renderapi.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Font\FontImageConstructor.h">
+      <Filter>Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Font\RasterFontDescData.h">
+      <Filter>Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\RenderModules\TextRenderManagment\FontManager.h">
+      <Filter>TextRenderManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\RenderModules\TextRenderManagment\TextRenderer\BaseTextRenderer.h">
+      <Filter>TextRenderManagement\TextRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\RenderModules\TextRenderManagment\TextRenderer\TextRenderer.h">
+      <Filter>TextRenderManagement\TextRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\02-SimpleText\SimpleTextApp.h">
+      <Filter>SimpleText</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

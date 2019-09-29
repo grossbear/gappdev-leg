@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="GLRender">
+      <UniqueIdentifier>{4acccc21-1179-4795-8474-cb15ecfda99b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLRender\sys">
+      <UniqueIdentifier>{39422f52-476a-4e56-9bc0-a6ab398de555}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Framework\GLRender\GLArbProc.cpp">
+      <Filter>GLRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\GLRender\GLArbProcAddr.cpp">
+      <Filter>GLRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\GLRender\GLDevContext.cpp">
+      <Filter>GLRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\GLRender\GLDevInfo.cpp">
+      <Filter>GLRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\GLRender\GLExtProc.cpp">
+      <Filter>GLRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\GLRender\GLExtProcAddr.cpp">
+      <Filter>GLRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\GLRender\GLOcclusionQuery.cpp">
+      <Filter>GLRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\GLRender\GLRender.cpp">
+      <Filter>GLRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\GLRender\GLShaderSystem.cpp">
+      <Filter>GLRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\GLRender\GLTextureSystem.cpp">
+      <Filter>GLRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\GLRender\GLVBOSystem.cpp">
+      <Filter>GLRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\GLRender\GLVerProc.cpp">
+      <Filter>GLRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\GLRender\GLVerProcAddr.cpp">
+      <Filter>GLRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\GLRender\sys\WGLDevContext.cpp">
+      <Filter>GLRender\sys</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Framework\GLRender\GLArbProc.h">
+      <Filter>GLRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\GLConvFunc.h">
+      <Filter>GLRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\GLDevContext.h">
+      <Filter>GLRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\GLDevInfo.h">
+      <Filter>GLRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\GLExtProc.h">
+      <Filter>GLRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\GLOcclusionQuery.h">
+      <Filter>GLRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\GLRender.h">
+      <Filter>GLRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\GLShaderSystem.h">
+      <Filter>GLRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\GLSupExtStruct.h">
+      <Filter>GLRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\GLTextureSystem.h">
+      <Filter>GLRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\GLVBOSystem.h">
+      <Filter>GLRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\GLVerProc.h">
+      <Filter>GLRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\sys\getproc.h">
+      <Filter>GLRender\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\sys\WGLDevContext.h">
+      <Filter>GLRender\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\GLRender\sys\WGLSupExtStruct.h">
+      <Filter>GLRender\sys</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

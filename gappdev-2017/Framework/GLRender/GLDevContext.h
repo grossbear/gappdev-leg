@@ -1,0 +1,18 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+// GLDevContext.h
+//
+// OpenGL Device Context Handle Class
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+#ifndef _GLDEVCONTEXT_H_
+#define _GLDEVCONTEXT_H_
+
+#ifdef WIN32
+#include "sys/WGLDevContext.h"
+typedef CWGLDeviceContext CGLDevContext;
+#else 
+#error NO GL Device Context Available
+#endif
+
+
+#endif //_GLDEVCONTEXT_H_

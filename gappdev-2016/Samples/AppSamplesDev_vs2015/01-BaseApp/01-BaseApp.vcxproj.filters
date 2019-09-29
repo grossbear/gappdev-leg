@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="AppWindow">
+      <UniqueIdentifier>{f454575b-d3b8-4a4b-89f8-172f99885653}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{335c8633-5e89-4947-bb66-fe54ba86e04f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseApp">
+      <UniqueIdentifier>{9f043a83-c57a-41a5-9bb8-aa51ab66e235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AppWindow\sys">
+      <UniqueIdentifier>{1d8b73e7-30b1-4b46-830b-b74dee24c545}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Framework\AppWindow\AppWindow.cpp">
+      <Filter>AppWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\AppWindow\WinMain.cpp">
+      <Filter>AppWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Application.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\01-BaseApp\BaseApp.cpp">
+      <Filter>BaseApp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Framework\AppWindow\AppWindow.h">
+      <Filter>AppWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Application.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\PlatformTypes.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Renderapi.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\01-BaseApp\BaseApp.h">
+      <Filter>BaseApp</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

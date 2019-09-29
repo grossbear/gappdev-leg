@@ -1,0 +1,37 @@
+///////////////////////////////////////////////////////////////////////////////////////
+//  FileStream.h
+//
+//  Input/Output File Stream Class
+//  Created: 23-11-2011
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+#ifndef __FILESTREAM_H__
+#define __FILESTREAM_H__
+
+#include <TCHAR.H>
+#include "IDataStream.h"
+
+///////////////////////////////////////////////////////////////////////////////////////
+enum OpenMode 
+{
+    open_read,
+    open_read_write,
+    open_create,
+    open_overwrite,
+    open_append,
+};
+
+
+#ifdef WIN32
+#include "sys/Win32FileStream.h"
+typedef CWin32FileStream CFileStream;
+#else
+#include "sys/StdFileStream.h"
+typedef CStd32FileStream CFileStream;
+#endif 
+
+
+#endif //__FILESTREAM_H__
+
+///////////////////////////////////////////////////////////////////////////////////////

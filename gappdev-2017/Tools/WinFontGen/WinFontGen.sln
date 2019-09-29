@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinFontGen", "WinFontGen\WinFontGen.vcproj", "{0210FB0B-0C3A-4BF1-8636-D424C461EF43}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utils", "..\..\Modules\Libs\Utils\Utils.vcproj", "{6F55D1B9-CC3B-4CDD-A5AE-6FAF07E32A77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0210FB0B-0C3A-4BF1-8636-D424C461EF43}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0210FB0B-0C3A-4BF1-8636-D424C461EF43}.Debug|Win32.Build.0 = Debug|Win32
+		{0210FB0B-0C3A-4BF1-8636-D424C461EF43}.Release|Win32.ActiveCfg = Release|Win32
+		{0210FB0B-0C3A-4BF1-8636-D424C461EF43}.Release|Win32.Build.0 = Release|Win32
+		{6F55D1B9-CC3B-4CDD-A5AE-6FAF07E32A77}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6F55D1B9-CC3B-4CDD-A5AE-6FAF07E32A77}.Debug|Win32.Build.0 = Debug|Win32
+		{6F55D1B9-CC3B-4CDD-A5AE-6FAF07E32A77}.Release|Win32.ActiveCfg = Release|Win32
+		{6F55D1B9-CC3B-4CDD-A5AE-6FAF07E32A77}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

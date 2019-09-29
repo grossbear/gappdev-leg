@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="AppWindow">
+      <UniqueIdentifier>{df17d908-31ff-40c6-852c-df15a9deb604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{5b5a0168-0dc3-404e-8b33-1d4d57bf076b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeshDevApp">
+      <UniqueIdentifier>{5892c22a-c882-491a-8f8b-e3b9b89c3de4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{aeac67ee-c65c-4d42-8893-cb1787247526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\ModelsLoader">
+      <UniqueIdentifier>{385d3701-fa11-40ee-b9ab-69fae22ef238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\Mesh">
+      <UniqueIdentifier>{39c8da2f-d24e-4cfa-9ab9-bb1898572544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeshDevApp\mdldata">
+      <UniqueIdentifier>{cd14c8e9-7528-4f89-af6c-ab67eaba5f6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AppWindow\sys">
+      <UniqueIdentifier>{cb45b6e7-5ef6-4d26-ad72-1a5f6491bfd2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Framework\AppWindow\AppWindow.cpp">
+      <Filter>AppWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\AppWindow\WinMain.cpp">
+      <Filter>AppWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Application.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\03-MeshDevApp\camera.cpp">
+      <Filter>MeshDevApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\03-MeshDevApp\MeshDevApp.cpp">
+      <Filter>MeshDevApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\03-MeshDevApp\scene.cpp">
+      <Filter>MeshDevApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\03-MeshDevApp\mdldata\md2data.cpp">
+      <Filter>MeshDevApp\mdldata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Models\Mesh\MeshData.cpp">
+      <Filter>Models\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Models\ModelsLoader\MD2Loader.cpp">
+      <Filter>Models\ModelsLoader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Framework\AppWindow\AppWindow.h">
+      <Filter>AppWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Application.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\PlatformTypes.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Renderapi.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\03-MeshDevApp\camera.h">
+      <Filter>MeshDevApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\03-MeshDevApp\MeshDevApp.h">
+      <Filter>MeshDevApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\03-MeshDevApp\scene.h">
+      <Filter>MeshDevApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\03-MeshDevApp\mdldata\md2data.h">
+      <Filter>MeshDevApp\mdldata</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Models\Mesh\MeshData.h">
+      <Filter>Models\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Models\ModelsLoader\MD2Loader.h">
+      <Filter>Models\ModelsLoader</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

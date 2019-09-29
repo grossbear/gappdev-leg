@@ -1,0 +1,154 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+// Application.cpp
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+#include "AppWindow/AppWindow.h"
+#include "Application.h"
+#include "Renderapi.h"
+
+#include "GLRender/GLrender.h"
+
+CApplication *CApplication::m_pAppl = NULL;
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+CApplication* CApplication::GetSingleton()
+{
+	return m_pAppl;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+// Default Constructor
+// Protected Method
+CApplication::CApplication(const char *pAppName) :m_pApplWnd(NULL), m_bRunning(false)
+{
+    m_width = 640;
+    m_height = 480;
+
+    size_t len = strlen(pAppName);
+    m_strApplName = new char[len+1];
+    memcpy(m_strApplName, pAppName, len*sizeof(char));
+    m_strApplName[len] = 0;
+
+    memset(m_bKeys,0,sizeof(m_bKeys)*sizeof(bool));
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+CApplication::~CApplication()
+{
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+bool CApplication::Run(CApplWindow *pApplWnd)
+{
+    bool result = this->StartAppl(pApplWnd);
+    if(!result)
+        return false;
+
+	result = this->InitAppl();
+	if(!result)
+		return false;
+
+    this->RunAppl();
+
+    result = this->CloseAppl();
+
+    return result;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+bool CApplication::IsActive() const
+{
+    return m_bActive;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+bool CApplication::RunMainProcess()
+{
+    m_gapi->Clear();
+    m_gapi->SwapGraphicBuffers();
+
+    return m_bRunning;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+void CApplication::CloseMsg()
+{
+    m_bRunning = false;
+}
+/////////////////////////////////////////////////////////////////////////////////////////////
+void CApplication::QuitMsg()
+{
+    m_bRunning = false;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+bool CApplication::StartAppl(CApplWindow *pApplWnd)
+{
+    if(pApplWnd == NULL)
+        return false;
+
+	m_pApplWnd = pApplWnd;
+
+    if(!m_pApplWnd->CreateApplWindow(m_strApplName,m_width,m_height))
+        return false;
+
+    if(!CreateGraphicAPI())
+        return false;
+    
+    m_pApplWnd->SetWindow();
+
+    m_bActive = true;
+    m_bRunning = true;
+	
+	return true;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+bool CApplication::InitAppl()
+{
+	return true;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+bool CApplication::RunAppl()
+{
+    bool result = true;
+    while(result)
+    {
+        m_pApplWnd->ProcessMessages();
+        result = RunAfterProcess();
+    }
+
+	return true;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+bool CApplication::CloseAppl()
+{
+    m_bActive = false;
+    m_bRunning = false;
+	m_pApplWnd = NULL;
+	return true;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+bool CApplication::RunAfterProcess()
+{
+    return false;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+bool CApplication::CreateGraphicAPI()
+{
+    GAPICREATIONINFO info;
+    memset(&info,0,sizeof(GAPICREATIONINFO));
+    m_gapi = new CGLRender();
+    bool result = m_pApplWnd->SetupGraphicApi(m_gapi,info);
+    //bool result = true;
+    return result;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////

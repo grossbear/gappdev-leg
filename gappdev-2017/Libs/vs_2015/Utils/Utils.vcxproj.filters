@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Array">
+      <UniqueIdentifier>{45cad81c-d9d6-4557-a208-54f067a7342f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IOStream">
+      <UniqueIdentifier>{298d8b5d-3d75-41b4-aeba-7c78a40fb8c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IOStream\sys">
+      <UniqueIdentifier>{b11eb494-ae1e-44c0-b696-730cff8363e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{e6b7ec1e-13f4-44b9-b27f-7226d9d4f9c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mem">
+      <UniqueIdentifier>{5b696264-7d5d-4aee-8ce4-10ea659e75bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{73b7e6c3-436d-4a27-8123-541c073a315f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer\sys">
+      <UniqueIdentifier>{78cbfc41-eb03-4e6f-a62f-4b5f0bf376da}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Framework\Utils\BitArray.cpp">
+      <Filter>Array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Utils\IOStream\BufFileStream.cpp">
+      <Filter>IOStream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Utils\IOStream\FileStream.cpp">
+      <Filter>IOStream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Utils\IOStream\sys\StdFileStream.cpp">
+      <Filter>IOStream\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Utils\IOStream\sys\Win32FileStream.cpp">
+      <Filter>IOStream\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Utils\Logger\Logger.cpp">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Utils\mem\memory_allocator_new.cpp">
+      <Filter>mem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Utils\Timer\Timer.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Utils\Timer\sys\WinTimer.cpp">
+      <Filter>Timer\sys</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Framework\Utils\BitArray.h">
+      <Filter>Array</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Utils\BlockArray.h">
+      <Filter>Array</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Utils\IOStream\BufFileStream.h">
+      <Filter>IOStream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Utils\IOStream\FileStream.h">
+      <Filter>IOStream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Utils\IOStream\IDataStream.h">
+      <Filter>IOStream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Utils\IOStream\sys\StdFileStream.h">
+      <Filter>IOStream\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Utils\IOStream\sys\Win32FileStream.h">
+      <Filter>IOStream\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Utils\Logger\Logger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Utils\mem\memory_allocator.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Utils\mem\memory_allocator_new.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Utils\Timer\Timer.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Utils\Timer\sys\WinTimer.h">
+      <Filter>Timer\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Utils\ArrayMap.h">
+      <Filter>Array</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

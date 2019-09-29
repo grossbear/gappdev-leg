@@ -1,0 +1,29 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+// Win32LibraryLoader.h
+//
+// Windows Dynamic Link Library Loader Class
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+#ifndef __WIN32LIBRARYLOADER_H__
+#define __WIN32LIBRARYLOADER_H__
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+class CWin32LibraryLoader
+{
+public:
+    static IGraphicAPI *LoadRenderModule(const char *name);
+    static void ReleaseRenderModule();
+
+    static bool LoadImageIOModule(const char *name);
+    static void ReleaseImageIOModule();
+
+protected:
+    static HMODULE  m_hRenderLibModule;
+    static IGraphicAPI *m_pGraphicAPI;
+
+    static HMODULE  m_hBMImgIOLibModule;
+};
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+#endif //__WIN32LIBRARYLOADER_H__

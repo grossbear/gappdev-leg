@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Image">
+      <UniqueIdentifier>{3129ac3e-94f2-49e2-9926-526500185a2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageFormats">
+      <UniqueIdentifier>{6bfbf814-2a81-46a5-8fb1-b9b95b3186fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Framework\Image\Image.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Image\ImageIO.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Image\ImageIOManager.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Image\BMImageIO\BitMapImageIO.cpp">
+      <Filter>ImageFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Image\BMImageIO\BMP.cpp">
+      <Filter>ImageFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Image\BMImageIO\DDS.cpp">
+      <Filter>ImageFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Image\BMImageIO\JPEG.cpp">
+      <Filter>ImageFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Image\BMImageIO\PCX.cpp">
+      <Filter>ImageFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Image\BMImageIO\PNG.cpp">
+      <Filter>ImageFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Image\BMImageIO\TGA.cpp">
+      <Filter>ImageFormats</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Framework\Image\Image.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Image\ImageFormat.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Image\ImageIO.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Image\ImageIOManager.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Image\ImageLib.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Image\BMImageIO\BitMapImageIO.h">
+      <Filter>ImageFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Image\BMImageIO\BMP.h">
+      <Filter>ImageFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Image\BMImageIO\DDS.h">
+      <Filter>ImageFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Image\BMImageIO\JPEG.h">
+      <Filter>ImageFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Image\BMImageIO\PCX.h">
+      <Filter>ImageFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Image\BMImageIO\PNG.h">
+      <Filter>ImageFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Image\BMImageIO\TGA.h">
+      <Filter>ImageFormats</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

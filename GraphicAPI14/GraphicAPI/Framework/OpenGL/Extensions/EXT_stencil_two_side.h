@@ -1,0 +1,14 @@
+////////////////////////////////////////////////////////////////////////////////////////////////
+//	EXT_stencil_two_side.cpp 
+//	EXT_stencil_two_side Extension Setup 
+//	Created: 6th August 2006
+//	
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* GL_EXT_stencil_two_side */
+#ifdef GL_EXT_stencil_two_side
+extern PFNGLACTIVESTENCILFACEEXTPROC	glActiveStencilFaceEXT;
+
+bool SetupEXTStencilTwoSide();
+
+#endif //GL_EXT_stencil_two_side

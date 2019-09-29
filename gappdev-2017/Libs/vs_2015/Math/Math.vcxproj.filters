@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Algebra">
+      <UniqueIdentifier>{ab3d7f25-582e-4a1c-8ad6-4b5550f925ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1d0401c3-91b7-4dbb-8121-e3f9b89a6edd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Framework\Math\Algebra.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\Matrix.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\MtxSpec.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\Plane.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\PlaneSpec.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\PrimFunc.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\Quaternion.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\QuatSpec.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\Vector.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\VectorSpec.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\3DMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\3DMathSpec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\MathConst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\MathDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\MathLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\MathLibDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\MathPrim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\Sqrt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Framework\Math\Trigonometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Framework\Math\Matrix.cpp">
+      <Filter>Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Math\MtxSpec.cpp">
+      <Filter>Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Math\Plane.cpp">
+      <Filter>Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Math\PlaneSpec.cpp">
+      <Filter>Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Math\Quaternion.cpp">
+      <Filter>Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Math\QuatSpec.cpp">
+      <Filter>Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Math\Vector.cpp">
+      <Filter>Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Math\VectorSpec.cpp">
+      <Filter>Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Math\3DMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Math\half.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Math\mathlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Math\MathPrim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Math\Sqrt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Framework\Math\Trigonometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Framework\Math\Matrix.inl">
+      <Filter>Algebra</Filter>
+    </None>
+    <None Include="..\..\..\Framework\Math\Plane.inl">
+      <Filter>Algebra</Filter>
+    </None>
+    <None Include="..\..\..\Framework\Math\Quaternion.inl">
+      <Filter>Algebra</Filter>
+    </None>
+    <None Include="..\..\..\Framework\Math\Vector.inl">
+      <Filter>Algebra</Filter>
+    </None>
+    <None Include="..\..\..\Framework\Math\MathPrim.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\Framework\Math\Trigonometry.inl">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
